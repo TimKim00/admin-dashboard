@@ -5,6 +5,7 @@ body {
     min-height: 100vh;
     margin: 0 0;
     font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
 /* Header */
@@ -13,15 +14,19 @@ body {
     grid-column: 2 / 3;
     background-color:aquamarine;
     display: grid;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr 1.5fr;
 }
 
-.header-top {
-    display: grid;
-    grid-template-columns: 2fr 1.3fr;
-    padding: 2% 4%;
-    gap: 10%;
+.header-top, .header-bottom {
     align-items: center;
+    display: grid;
+    padding: 2% 4%;
+}
+
+/* Header top */
+.header-top {
+    grid-template-columns: 2fr 1.3fr;
+    gap: 10%;
 }
 
 input {
@@ -41,6 +46,41 @@ input {
     display: flex;
     gap: 10%;
     font-weight: bolder;
+}
+
+/* Header bottom */
+.header-bottom {
+    grid-template-columns: 1fr 1fr;
+    gap: 10%;
+}
+
+.profile-hi {
+    display: flex;
+    gap: 5%;
+}
+
+.welcome {
+    font-size: small;
+}
+
+.usercode {
+    font-size: large;
+}
+
+.actions {
+    display: flex;
+    gap: 8%;
+    padding-left: 10%;
+}
+
+button {
+    background-color: blue;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 64px;
+    width: 35%;
+    padding: 0.7rem 0px;
 }
 
 .menu {
