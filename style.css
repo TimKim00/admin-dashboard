@@ -1,39 +1,19 @@
 body {
     display: grid;
     grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 3fr;
     min-height: 100vh;
     margin: 0 0;
     font-family:Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
 
-/* Main Content */
-.main-content {
-    grid-column: 2 / 3;
-    display: grid;
-    grid-template-rows: 1fr 4fr;
-}
-
 /* Header */
 .header {
-    position: sticky;
-    top: 0;
     grid-row: 1 / 2;
-    background-color:white;
+    grid-column: 2 / 3;
+    background-color:aquamarine;
     display: grid;
-<<<<<<< HEAD
-    grid-template-rows: 1fr 2fr;
-    box-shadow: 4px 2px 10px -4px gray;
-}
-
-.header-top, .header-bottom {
-    padding: 2% 4%;
-    align-items: center;
-}
-
-.header-top {
-    display: grid;
-=======
     grid-template-rows: 1fr 1.5fr;
 }
 
@@ -45,7 +25,6 @@ body {
 
 /* Header top */
 .header-top {
->>>>>>> a47d2099f707f85262907c4ca771b4cd460df7d8
     grid-template-columns: 2fr 1.3fr;
     gap: 10%;
 }
@@ -55,7 +34,6 @@ input {
     border: none;
     border-radius: 64px;
     font-size: x-large;
-    background-color: whitesmoke;
 }
 
 .nav {
@@ -70,17 +48,6 @@ input {
     font-weight: bolder;
 }
 
-<<<<<<< HEAD
-/* Content */
-.content {
-    grid-row: 2 / 3;
-    background-color:azure;
-}
-
-
-/* Sidebar */
-.sidebar {
-=======
 /* Header bottom */
 .header-bottom {
     grid-template-columns: 1fr 1fr;
@@ -116,18 +83,33 @@ button {
     padding: 0.7rem 0px;
 }
 
+/* Sidebar */
 .menu {
     grid-row: 1 / 3;
->>>>>>> a47d2099f707f85262907c4ca771b4cd460df7d8
     grid-column: 1 / 2;
-    background-color:lemonchiffon;
+    background-color:lightskyblue;
+    padding: 1rem;
 }
 
+.menu, .nav-menu, .privacy-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 
-
-/* Sidebar menu */
 .menu {
-    grid-row: 1 / 3;
-    grid-column: 1 / 2;
-    
+    gap: 4rem;
+}
+
+.sidebar-nav {
+    font-size: large;
+    color: white;
+    display: flex;
+    gap: 10%;
+}
+
+.content {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    background-color:azure;
 }
