@@ -1,0 +1,176 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    min-height: 100vh;
+    margin: 0 0;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+svg {
+    height: 32px;
+    width: auto;
+}
+
+/* Header */
+.header {
+    grid-column: 2 / 3;
+    background-color:white;
+    display: grid;
+    padding: 2% 4%;
+    grid-template-columns: 2fr 1.3fr;
+    gap: 10%;
+    /* Make the header sticky */
+    position: sticky;
+    top: 0;
+}
+
+input {
+    width: 90%;
+    border: none;
+    border-radius: 64px;
+    font-size: x-large;
+    background-color: #e2e8f0;
+}
+
+.nav {
+    display: flex;
+    gap: 5%;
+    align-items: center;
+}
+
+.profile {
+    display: flex;
+    gap: 10%;
+    font-weight: bolder;
+    align-items: center;
+}
+
+/* pop-up */
+.pop-up {
+    padding: 1% 4%;
+    grid-template-columns: 1fr 1fr;
+    gap: 10%;
+    display: grid;
+    background-color: white;
+    height: 10vh;
+}
+
+.profile-hi {
+    display: flex;
+    gap: 5%;
+}
+
+.welcome {
+    font-size: small;
+}
+
+.usercode {
+    font-size: large;
+}
+
+ 
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 8%;
+    padding-left: 20%;
+}
+
+
+button {
+    background-color: #0ea5e9;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 64px;
+    padding: 1rem;
+}
+
+button:hover {
+    filter: brightness(90%);
+}
+
+/* Sidebar */
+.nav-bar {
+    grid-column: 1 / 2;
+    background-color:#0ea5e9;
+    padding: 2rem;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-bar, .nav-menu, .privacy-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.nav-bar {
+    gap: 4rem;
+}
+
+.sidebar-nav {
+    font-size: large;
+    color: white;
+    display: flex;
+    gap: 10%;
+    align-items: center;
+}
+
+
+/* Content */
+.content {
+    margin: 0;
+    grid-column: 2 / 3;
+    background-color:azure;
+    font-size: 1.5rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+}
+
+.widget {
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    gap: 1 rem;
+}
+
+#projects {
+    grid-row: 1 / 3;
+    background-color: aquamarine;
+}
+
+.display {
+    padding: 1rem;
+    display: grid;
+    gap: 1rem;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(auto-fit, 2fr)
+}
+
+.box, .box-widget {
+    background-color: white;
+    width: 90%;
+    height: 175px;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: inset 10px 0px gold;
+}
+
+.widget {
+    padding: 2rem;
+}
+
+.widget-display {
+    margin: 1rem;
+}
+
+.box-widget {
+    height: 275px;
+}
